@@ -3,7 +3,9 @@ const packageName = process.env.npm_package_name;
 
 module.exports = {
   plugins: {
-    "release-it-pnpm": {},
+    "release-it-pnpm": {
+      disableRelease: true,
+    },
     "@release-it/conventional-changelog": {
       path: ".",
       infile: "CHANGELOG.md",
